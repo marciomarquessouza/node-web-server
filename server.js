@@ -61,7 +61,12 @@ app.get('/about', (req, res) => {
   });
 });
 
-
+app.get('/project', (req, res) => {
+  res.render('project.hbs',{
+    pageTitle: 'Projects',
+    body:"You say yes, and I say no",
+  });
+});
 
 app.get('/help', () => {
 
